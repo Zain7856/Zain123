@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Disease Questionnaire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Diabetes.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Left side with Image -->
+        <div class="logo-container">
+            <img src="health care.png" alt="Logo" class="logo">
+        </div>
+        
+        <!-- Right side with Navigation Links -->
+        <nav class="nav-links">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+                <li><a href="Diseases.html">Diseases</a></li>
+                <li><a href="exp.html">Governorate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="quiz-section">
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <label for="q1">1. Do you have a family history of osteoporosis or broken bones?</label><br>
+                <label for="q1"> هل لديك تاريخ عائلي للإصابة بهشاشة العظام أو كسور العظام؟</label><br>
+                <input type="radio" name="q1" value="0" required> Yes<br>
+                <input type="radio" name="q1" value="20"> No
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <label for="q2">2. Have you noticed any height loss or a stooped posture?</label><br>
+                <label for="q2"> هل لاحظت أي فقدان في الطول أو وضعية منحنية؟</label><br>
+                <input type="radio" name="q2" value="0" required> Yes<br>
+                <input type="radio" name="q2" value="20"> No
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <label for="q3">3. Do you experience frequent bone fractures, even from minor falls or injuries?</label><br>
+                <label for="q3"> هل تعاني من كسور متكررة في العظام، حتى من السقوط أو الإصابات الطفيفة؟</label><br>
+                <input type="radio" name="q3" value="0" required> Yes<br>
+                <input type="radio" name="q3" value="30"> No
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <label for="q4">4. Do you have back pain, especially sharp or chronic pain?</label><br>
+                <label for="q4"> هل تعاني من آلام الظهر، خاصة الألم الحاد أو المزمن؟</label><br>
+                <input type="radio" name="q4" value="0" required> Yes<br>
+                <input type="radio" name="q4" value="30"> No
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <label for="q5">5. Are you a  or older adult?</label><br>
+                <label for="q5"> هل أنت شخص بالغ أو أكبر سنا؟</label><br>
+                <input type="radio" name="q5" value="0" required> Yes<br>
+                <input type="radio" name="q5" value="20"> No
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+
+        <!-- Result -->
+        <div id="result" class="result"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Health Risk Assessment</p>
+    </footer>
+
+    <script src="Osteoporosis.java"></script>
+
+</body>
+</html>

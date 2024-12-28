@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    background-image: url("main.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Body and Font */
+body, html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between; /* To place the image and links apart */
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo (Image) on the left */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.logo {
+    max-width: 100%;
+    height: 120px;
+    object-fit: contain;
+    position: relative;
+    left: -40px;
+}
+
+/* Navigation Links on the right */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between links */
+}
+
+.nav-links ul li {
+    display: inline-block;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header {
+        padding: 20px 30px;
+    }
+
+    .nav-links ul {
+        gap: 20px;
+    }
+
+    .logo {
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .nav-links ul {
+        gap: 15px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-links ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .services .service-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .about, .contact {
+        padding: 20px;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('elderly-care-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    top: 50px;
+    min-height: 400px;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #008c9e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero a:hover {
+    background-color: #007b8d;
+}
+
+/* Services Section */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services .service-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* About and Contact Sections */
+.about, .contact {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 18px;
+}

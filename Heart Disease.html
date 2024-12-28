@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Disease Questionnaire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Diabetes.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Left side with Image -->
+        <div class="logo-container">
+            <img src="health care.png" alt="Logo" class="logo">
+        </div>
+        
+        <!-- Right side with Navigation Links -->
+        <nav class="nav-links">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+                <li><a href="Diseases.html">Diseases</a></li>
+                <li><a href="exp.html">Governorate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="quiz-section">
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <label for="q1">1. Do you experience chest pain, tightness, or discomfort?</label><br>
+                <label for="q1">هل تعاني من ألم في الصدر أو ضيق أو عدم راحة؟</label><br>
+                <input type="radio" name="q1" value="0" required> Yes<br>
+                <input type="radio" name="q1" value="20"> No
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <label for="q2">2. Do you often feel short of breath, even during mild activity or rest?</label><br>
+                <label for="q2"> هل تشعر غالبا بضيق في التنفس ، حتى أثناء النشاط الخفيف أو الراحة؟</label><br>
+                <input type="radio" name="q2" value="0" required> Yes<br>
+                <input type="radio" name="q2" value="20"> No
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <label for="q3">3. Do you experience dizziness, lightheadedness, or fainting?</label><br>
+                <label for="q3"> هل تعاني من الدوخة أو الدوار أو الإغماء؟</label><br>
+                <input type="radio" name="q3" value="0" required> Yes<br>
+                <input type="radio" name="q3" value="30"> No
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <label for="q4">4. Do you have swelling in your legs, ankles, or feet?</label><br>
+                <label for="q4"> هل لديك تورم في ساقيك أو كاحليك أو قدميك؟</label><br>
+                <input type="radio" name="q4" value="0" required> Yes<br>
+                <input type="radio" name="q4" value="30"> No
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <label for="q5">5. Do you feel unusually fatigued or weak, even with normal activities?</label><br>
+                <label for="q5"> هل تشعر بالتعب أو الضعف بشكل غير عادي، حتى مع الأنشطة العادية؟</label><br>
+                <input type="radio" name="q5" value="0" required> Yes<br>
+                <input type="radio" name="q5" value="20"> No
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+
+        <!-- Result -->
+        <div id="result" class="result"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Health Risk Assessment</p>
+    </footer>
+
+    <script src="Heart Disease.java"></script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header {
+        padding: 20px 30px;
+    }
+
+    .nav-links ul {
+        gap: 20px;
+    }
+
+    .logo {
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .nav-links ul {
+        gap: 15px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-links ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .services .service-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .about, .contact {
+        padding: 20px;
+    }
+}
+
+
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between; /* To place the image and links apart */
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo (Image) on the left */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.logo {
+    max-width: 100%; 
+    height: 120px; /* Fixed height for the logo */
+    position: relative;
+    left: -px;
+}
+
+/* Navigation Links on the right */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between links */
+}
+
+.nav-links ul li {
+    display: inline-block;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #00bcd4; /* Color change on hover */
+}
+
+
+
+/* تنسيق الحاوية الرئيسية */
+.container {
+    display: flex;
+    height: 100vh; /* ملء الشاشة عموديًا */
+}
+
+/* تنسيق الجزء الأيسر (الصورة) */
+.left {
+    flex: 1; /* يشغل 50% من العرض */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img {
+    width: 100%; /* الصورة ستكون بحجم 100% من الحاوية */
+    max-width: 500px; /* الحد الأقصى لعرض الصورة */
+    height:auto;
+}
+
+/* تنسيق الجزء الأيمن (النص) */
+.right {
+    flex: 1; /* يشغل 50% من العرض */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.right p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 20px;
+}

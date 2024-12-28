@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Disease Questionnaire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Diabetes.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Left side with Image -->
+        <div class="logo-container">
+            <img src="health care.png" alt="Logo" class="logo">
+        </div>
+        
+        <!-- Right side with Navigation Links -->
+        <nav class="nav-links">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+                <li><a href="Diseases.html">Diseases</a></li>
+                <li><a href="exp.html">Governorate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="quiz-section">
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <label for="q1">1. Sudden numbness or weakness in the face, arm, or leg, especially on one side of the body?</label><br>
+                <label for="q1"> تنميل أو ضعف مفاجئ في الوجه أو الذراع أو الساق ، خاصة في جانب واحد من الجسم؟</label><br>
+                <input type="radio" name="q1" value="0" required> Yes<br>
+                <input type="radio" name="q1" value="20"> No
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <label for="q2">2. Is there sudden confusion, trouble speaking, or difficulty understanding speech?</label><br>
+                <label for="q2"> هل هناك ارتباك مفاجئ أو صعوبة في الكلام أو صعوبة في فهم الكلام؟</label><br>
+                <input type="radio" name="q2" value="0" required> Yes<br>
+                <input type="radio" name="q2" value="20"> No
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <label for="q3">3. Is there sudden trouble seeing in one or both eyes?</label><br>
+                <label for="q3"> هل هناك مشكلة مفاجئة في الرؤية في إحدى العينين أو كلتيهما؟</label><br>
+                <input type="radio" name="q3" value="0" required> Yes<br>
+                <input type="radio" name="q3" value="30"> No
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <label for="q4">4. Do you experience sudden dizziness, trouble walking, or loss of coordination?</label><br>
+                <label for="q4"> هل تعاني من دوخة مفاجئة أو صعوبة في المشي أو فقدان التنسيق؟</label><br>
+                <input type="radio" name="q4" value="0" required> Yes<br>
+                <input type="radio" name="q4" value="30"> No
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <label for="q5">5. Have you suddenly developed a severe headache with no known cause?</label><br>
+                <label for="q5"> هل أصبت فجأة بصداع شديد بدون سبب معروف؟</label><br>
+                <input type="radio" name="q5" value="0" required> Yes<br>
+                <input type="radio" name="q5" value="20"> No
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+
+        <!-- Result -->
+        <div id="result" class="result"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Health Risk Assessment</p>
+    </footer>
+
+    <script src="Stroke.java"></script>
+
+</body>
+</html>

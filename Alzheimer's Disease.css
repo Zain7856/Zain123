@@ -1,0 +1,210 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between; /* To place the image and links apart */
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo (Image) on the left */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.logo {
+    max-width: 100%;
+    height: 120px; /* Fixed height for the logo */
+    position: relative;
+    left: 0;
+}
+
+/* Navigation Links on the right */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between links */
+}
+
+.nav-links ul li {
+    display: inline-block;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #00bcd4; /* Color change on hover */
+}
+
+/* Quiz Section */
+.quiz-section {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    padding-top: 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-section .question {
+    margin-bottom: 20px;
+}
+
+.question label {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+}
+
+.question input {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #00bcd4;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #008c9e;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header {
+        padding: 15px 30px; /* Adjust padding for tablets */
+    }
+
+    .nav-links ul {
+        gap: 20px; /* Reduce gap between navigation links */
+    }
+
+    .logo {
+        height: 100px; /* Adjust logo size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px 20px;
+        align-items: center;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        height: 80px; /* Smaller logo for mobile */
+    }
+
+    .quiz-section {
+        padding: 15px;
+        margin: 30px 20px;
+    }
+
+    .question label {
+        font-size: 16px; /* Adjust font size for smaller devices */
+    }
+
+    .quiz-section button {
+        font-size: 16px; /* Smaller button on mobile */
+    }
+
+    footer p {
+        font-size: 18px; /* Adjust footer text size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 15px; /* Reduce padding for very small screens */
+    }
+
+    .nav-links ul {
+        gap: 8px; /* Reduce gap between links */
+    }
+
+    .logo {
+        height: 60px; /* Even smaller logo for very small screens */
+    }
+
+    .quiz-section {
+        padding: 10px;
+        margin: 20px 10px;
+    }
+
+    .quiz-section .question label {
+        font-size: 14px; /* Even smaller font for mobile */
+    }
+
+    .quiz-section button {
+        font-size: 14px; /* Button text size reduced for smaller screens */
+    }
+
+    footer p {
+        font-size: 16px; /* Footer text smaller on very small screens */
+    }
+}

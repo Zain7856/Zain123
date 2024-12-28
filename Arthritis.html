@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Disease Questionnaire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Arthritis.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Left side with Image -->
+        <div class="logo-container">
+            <img src="health care.png" alt="Logo" class="logo">
+        </div>
+        
+        <!-- Right side with Navigation Links -->
+        <nav class="nav-links">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+                <li><a href="Diseases.html">Diseases</a></li>
+                <li><a href="exp.html">Governorate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="quiz-section">
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <label for="q1">1. Do you experience persistent joint pain or tenderness?</label><br>
+                <label for="q1"> هل تعاني من ألم مستمر في المفاصل أو إيلام؟</label><br>
+                <input type="radio" name="q1" value="0" required> Yes<br>
+                <input type="radio" name="q1" value="20"> No
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <label for="q2">2. Do your joints feel stiff, especially in the morning or after resting?</label><br>
+                <label for="q2">هل تشعر بتيبس مفاصلك ، خاصة في الصباح أو بعد الراحة؟</label><br>
+                <input type="radio" name="q2" value="0" required> Yes<br>
+                <input type="radio" name="q2" value="20"> No
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <label for="q3">3. Have you noticed swelling or redness around your joints?</label><br>
+                <label for="q3">هل لاحظت تورما أو احمرارا حول مفاصلك؟</label><br>
+                <input type="radio" name="q3" value="0" required> Yes<br>
+                <input type="radio" name="q3" value="30"> No
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <label for="q4">4. Do you have difficulty moving your joints or notice a decrease in your range of motion?</label><br>
+                <label for="q4"> هل تواجه صعوبة في تحريك مفاصلك أو تلاحظ انخفاضا في نطاق حركتك؟</label><br>
+                <input type="radio" name="q4" value="0" required> Yes<br>
+                <input type="radio" name="q4" value="30"> No
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <label for="q5">5.Have you experienced fatigue or a general feeling of being unwell?</label><br>
+                <label for="q5">هل عانيت من التعب أو الشعور العام بالتوعك؟</label><br>
+                <input type="radio" name="q5" value="0" required> Yes<br>
+                <input type="radio" name="q5" value="20"> No
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+
+        <!-- Result -->
+        <div id="result" class="result"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Health Risk Assessment</p>
+    </footer>
+
+    <script src="Arthritis.java"></script>
+
+</body>
+</html>

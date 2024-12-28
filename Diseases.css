@@ -1,0 +1,260 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font */
+body, html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    height: 100%; /* Ensure full height */
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.logo {
+    max-width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links ul li {
+    display: inline-block;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('https://via.placeholder.com/1600x900') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Diseases Section with 6 Equal Divs */
+.diseases {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 60px;
+    margin-top: 40px;
+}
+
+.disease-item {
+    position: relative;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+    height: 350px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.disease-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
+}
+
+.disease-item .image-container {
+    width: 100%;
+    height: 60%; /* Image takes up 60% of the div */
+    overflow: hidden;
+    background-size: cover;
+}
+
+.disease-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    color: white;
+}
+
+.overlay h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #008c9e;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+/* Responsive Design */
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 30px;
+    }
+
+    .nav-links ul {
+        gap: 15px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .diseases {
+        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+    }
+
+    .hero h1, .hero p {
+        font-size: 25px; /* Smaller text for hero section on tablets */
+    }
+
+    .hero-content {
+        padding: 30px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .nav-links ul {
+        gap: 10px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .diseases {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .hero h1, .hero p {
+        font-size: 20px; /* Even smaller text for mobile */
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .disease-item {
+        height: auto; /* Allow items to adjust height based on content */
+    }
+
+    .overlay h2 {
+        font-size: 28px; /* Reduce font size for headings in overlays */
+    }
+
+    .overlay p {
+        font-size: 14px; /* Smaller text in overlay descriptions */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Smaller buttons for mobile */
+        font-size: 14px;
+    }
+}

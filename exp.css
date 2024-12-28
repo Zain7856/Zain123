@@ -1,0 +1,215 @@
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between; /* To place the image and links apart */
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo (Image) on the left */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.logo {
+    max-width: 100%; 
+    height: 120px; /* Fixed height for the logo */
+    position: relative;
+    left: -px;
+}
+
+/* Navigation Links on the right */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between links */
+}
+
+.nav-links ul li {
+    display: inline-block;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #00bcd4; /* Color change on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 30px; /* Reduce padding for smaller screens */
+    }
+
+    .nav-links ul {
+        gap: 15px; /* Reduce gap between links */
+    }
+
+    .logo {
+        height: 40px; /* Smaller logo for mobile */
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    position: relative;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform-origin: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .box:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 40px rgba(0, 255, 0, 0.5);
+  }
+  
+  .box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(0, 255, 255, 0.2));
+    border-radius: 50%;
+    animation: animate-background 4s infinite linear;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+  
+  .content {
+    z-index: 1;
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+  
+  .description-btn {
+    padding: 10px 20px;
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+position: relative;
+top: 100px;
+  }
+  
+  .description-btn:hover {
+    background-color: #feb47b;
+  }
+  
+  .box-1 {
+    background-image: url('Cairo.jpg'); /* Add your own image */
+  }
+  
+  .box-2 {
+    background-image: url('Alex.jpg'); /* Add your own image */
+  }
+  
+  .box-3 {
+    background-image: url('Matrouh.jpg'); /* Add your own image */
+  }
+  
+  .box-4 {
+    background-image: url('kafr\ el-shiekh.jpg'); /* Add your own image */
+  }
+
+
+  .box-5 {
+    background-image: url('El-Gharbia.jpg'); /* Add your own image */
+  }
+
+
+  .box-6 {
+    background-image: url('Daqahleia.jpg'); /* Add your own image */
+  }
+  
+  @keyframes animate-background {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+  
+    .box {
+      width: 90%;
+      height: 300px;
+    }
+  }
+  
